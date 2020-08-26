@@ -9,7 +9,7 @@ let inputs = document.querySelectorAll("input");
 let bor = document.querySelector("#box");
 let i1 = document.querySelector("i1");
 let i2 = document.querySelector("i2");
-let i8 = document.querySelector("td");
+let i8 = document.querySelectorAll("#i7");
 let i3 = document.querySelector("i3")
 let cant= document.querySelector(".contact-counter");
 let can= document.querySelector("#add");
@@ -44,7 +44,7 @@ myform.addEventListener('submit', function (e) {
         <td>${insret.Addrss}</td>
         <td>
         <i1 class="fas fa-eye-slash mr-2 eyeSlash show" Deletestudents(this) style="font-size:25px"></i1>
-        <i8 class="fas fa-edit i2 mr-3"></i8>
+        <i8 class="fas fa-edit i2 mr-3" id="i7"onclick="EditPhone(this)"></i8>
         <i class="fas fa-phone-volume i3"></i>
         </td>
         <td>
@@ -69,7 +69,7 @@ function getphone(adde) {
     <td>${student.Addrss}</td>
     <td>
     <i1 class="fas fa-eye-slash mr-2 eyeSlash show" onclick="Deletestudents(this)"style="font-size:25px"></i1>
-    <i8 class="fas fa-edit i2 mr-3"></i8>
+    <i8 class="fas fa-edit i2 mr-3" id="i7"onclick="EditPhone(this)"></i8>
     <i class="fas fa-phone-volume i3"></i></td>
     <td>
     </td>
@@ -183,3 +183,24 @@ $(document).ready(function(){
 }
 
 }
+
+    function EditPhone(that){
+        let myNameElemnt =that.parentElement.parentElement;
+        let myName ={
+          'Name':myNameElemnt.children[0].textContent,
+           'Phone':myNameElemnt.children[1].textContent,
+           'Addrss':myNameElemnt.children[2].textContent,
+        };
+        inputs[2].value=myName['Name'];
+        inputs[3].value=myName['Phone'];
+        inputs[4].value=myName['Addrss'];
+        let i=0
+        for(let key in myName){
+            inputs[i++].value=myName[key];
+        } 
+        can.textContent="Edit";
+        can.onclick=function(){
+            can.textContent="Add";
+        }
+        
+    }

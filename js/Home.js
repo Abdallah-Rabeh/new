@@ -145,45 +145,6 @@ $('#Phone').blur(function () {
 $(document).ready(function(){
     $("p").hide();
   });
-  function searchPhone(e) {
-
-    tr = document.querySelectorAll(".tr");
-    if (isNaN($(search).val())) {
-        var term = e.target.value.toLowerCase();
-
-        for (var i = 0; i < x.length; i++) {
-
-            if (x[i].innerHTML.toLowerCase().indexOf(term) != -1) {
-
-                tr[i].style.display = "table-row"
-            }
-            else {
-                tr[i].style.display = "none"
-            }
-
-        }
-    }
-    else{
-        var term = e.target.value.toLowerCase();
-
-        for (var i = 0; i < x.length; i++) {
-
-            if ($('.phone').eq(i).text().indexOf(term) != -1) {
-
-                tr[i].style.display = "table-row"
-            }
-            else {
-                tr[i].style.display = "none"
-            }
-
-    }
-
-
-
-}
-
-}
-
     function EditPhone(that){
         let myNameElemnt =that.parentElement.parentElement;
         let myName ={

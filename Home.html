@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Abdallah Rabeh</title>
+    <link rel="icon"href="image/javascript.jpg">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/hover.css">
+    <script src="js/html5shiv.min.js"></script>    
+    <script src="js/Respond.js"></script>
+</head>
+<body>
+   <!---*******************Start_navbar_serah*******************--->
+   <nav class="navbar navbar-expand-lg navbar-gray-dark">
+    <a class="navbar-brand" href="#">PhoneBook</a>
+    <div class="contianer">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                <div class="prat-1">
+                  <input class="form-control mr-sm-2 list-input" type="search" placeholder="Sort..." aria-label="Search">
+                  <button class="btn btn-outline-success my-2 my-sm-0 terr search-input" type="submit">Sort</button>
+                </div>
+                <div class="prat-2">
+                  <input class="form-control mr-sm-2 list-input" type="search" placeholder="Search..." aria-label="Search">
+                  <button class="btn btn-outline-success my-2 my-sm-0 terr search-input" type="submit">Search</button>
+                </div>
+             
+          </div>
+    </div>
+    
+  </nav>
+   <!---*******************End_navbar_serah*******************--->
+     <!-- -------------------------------------- -->
+   <!--******************* Strat input *******************-->
+  <div class="row">
+    <div class="col-lg-2 col-md-3">
+    <form class="form">
+      <label>Name:</label>
+      <input type="text" placeholder="Name..."  class="form-control" name="Name" required id="#Name">
+      <label>Phone:</label>
+      <input type="text" placeholder="Phone..." class="form-control" name="Phone" required id="#Phone">
+      <label>Addrss:</label>
+      <input type="text" placeholder="Addrss.." class="form-control" name="Addrss"required id="#Addrss">
+      <button class="btn btn-success mt-0 mb-3 w-75 text-center hvr-shutter-in-vertical" id="add">Add</button>
+      <div class="contact-counter w-100 text-center contactcounter">0</div>
+    </form>
+    </div>
+    <div class="col-lg-10 col-lg-9">
+      <div class="item pt-3">
+
+        <table class="table">
+            <thead class="text-primary">
+                <tr><th>Name</th>
+                <th>Phone</th>
+                <th>Address</th>
+                <th class="pl-5">Edit</th>
+                <th><i1 class="fas fa-eye-slash mr-2 eyeSlash show" style="font-size:25px"></i1>
+                    <i2 class="fas fa-eye mr-2 eye hide" style="font-size:25px"></i2>
+                    <i3 class="fas fa-minus-circle allDelete" style="font-size:23px"></i3>
+                </th>
+            </tr></thead>
+            <tbody id="tableBody" class="body">
+
+            </tbody>
+        </table>
+
+
+        <div class="alert alert-danger mt-1 text-center box" id="box"> Sorry no any contacts yet try to add new
+            contacts by following steps :
+            add name &gt; phone &gt; address And Click Add
+        </div>
+
+
+
+
+    </div>
+    </div>
+  </div>
+
+
+    <!-- <div class="col-lg-12 col-md-12 col-xs-12">
+      <footer>
+        <p class="text-center">CopyRight By Abdallah Rabeh © 2019</p>
+      
+    </footer>  
+    </div>
+   -->
+
+        <!--               -->
+       <p>Abdallah</p>
+       
+       
+        <div class="a">
+      Desing:  <progress value="90" max="100"></progress><br>
+      Desing:  <meter value=".7" max="1"></meter><br>
+      <details>
+        <summary>image</summary>
+        <img src="image/javascript.jpg" class="img-fluid" alt="">
+      </details>
+        <!--               -->
+      </div>
+   <script src="js/jquery-3.5.1.js"></script>
+   <script src="js/Home.js"></script>
+   <script src="js/popper.js"></script>
+   <script src="js/bootstrap.js"></script>
+   
+</body>
+</html>

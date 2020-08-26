@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing-: border-box;
+    -moz-box-sizing-: border-box;
+    -ms-box-sizing-:border-box;
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+html{
+scroll-behavior: smooth;  
+
+}
+body{
+    height: auto;  
+    margin: 0;
+    padding: 0;
+   
+}
+nav{
+  background-color: #563d7c !important;
+  width: 105%;
+}
+.navbar-brand {
+  font-size:80px;
+  color: #fff;
+}
+
+.prat-1,.prat-2{
+  margin-left: 10px;
+  padding-left: 10px;
+}
+.prat-1 input,.prat-2 input{
+  width: 100% !important;
+  padding: 20px !important;
+  font-size: 20px !important;
+}
+.prat-1 button ,.prat-2 button{
+  width: 100% !important;
+  padding: 10px !important;
+  font-size: 20px !important;
+}
+
+.navbar-toggler{
+background-color: #fff;
+color: #000;
+border:none;
+}
+label{
+  font-size:25px!important;
+  color: #000;
+}
+.form-control{
+ font-size: 20px;
+}
+.input{
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+}
+.contact-counter {
+  background-image: radial-gradient(#444343, #262525);
+  height: 150px;
+  padding-top: 10px;
+  color: #212529;
+  font-size: 80px;
+  margin-top: 10px;
+}
+.form button{
+  font-size: 20px;
+  margin-top: 10px !important;
+  width: 100% !important;
+}
+thead{
+  font-size: x-large;
+}
+.hide{
+display: none !important;
+}
+.show{
+  display: inline-block !important;
+}
+.box{
+  opacity: 0;
+
+}
+.bot{
+  opacity: 1;
+  font-size: 25px;
+}
+i,td{
+font-size:25px !important;
+}

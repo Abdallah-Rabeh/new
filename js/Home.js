@@ -10,7 +10,8 @@ let bor = document.querySelector("#box");
 let i1 = document.querySelector("i1");
 let i2 = document.querySelector("i2");
 let i8 = document.querySelectorAll("#i7");
-let i3 = document.querySelector("i3")
+let i3 = document.querySelector("i3");
+
 let cant= document.querySelector(".contact-counter");
 let can= document.querySelector("#add");
 let prat= document.querySelector(".prat-1");
@@ -83,18 +84,6 @@ i1.onclick = function () {
     tables.classList.toggle('hide')
    // localStorage.setItem('adde', JSON.stringify(i1));
 }; 
-/*
-function Deletestudent(){
-   tables.classList.remove('body');
-     
-   let myStudent= that.parentElement.parentElement;
-    let Studentindex=adde.findIndex( (adde) =>{return adde.i1==myStudent.children[0].textContent});
-      adde.splice(Studentindex,1);
-     bor.classList.add('bot');
-    localStorage.setItem('adde',JSON.stringify(adde));
-    
-};
-*/
 function Deletestudents(that){
     let myStudent= that.parentElement.parentElement;
     let Studentindex=adde.findIndex( (adde) =>{return adde.i1==myStudent.children[0].textContent});
@@ -102,26 +91,18 @@ function Deletestudents(that){
     myStudent.remove();  
     bor.classList.add('bot');
    localStorage.setItem('adde',JSON.stringify(adde));
-    
-
 };
 can.onclick=function(){
     for(let i =0 ;i<mytd.children.length;i++){
         cant.textContent= mytd.children.length;
         localStorage.setItem('adde',JSON.stringify(adde));    
 
-    }
-  
-   
+    } 
 };
-i3.onclick=function(){
-    mytd.remove();
-    localStorage.setItem('adde',JSON.stringify(adde));    
-}
-mytree.onclick=function() {
-    adde.sort()
-   
-  }
+$("i3").click(function(){
+    $(tables).hide();
+    bor.classList.add('bot');
+});
   $('#Name').blur(function () {
     var regex = /^[a-zA-Z]+([a-zA-Z0-9](_|-| )[a-zA-Z0-9])*[a-zA-Z0-9]+$/;
     if (regex.test($('#Name').val())) {
@@ -157,7 +138,7 @@ $(document).ready(function(){
         inputs[4].value=myName['Addrss'];
         let i=0
         for(let key in myName){
-            inputs[i++].value=myName[key];
+            inputs[i].value=myName[key];
         } 
         can.textContent="Edit";
         can.onclick=function(){
@@ -165,3 +146,4 @@ $(document).ready(function(){
         }
         
     }
+    
